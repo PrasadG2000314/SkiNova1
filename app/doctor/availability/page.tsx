@@ -63,6 +63,7 @@ export default function DoctorAvailability() {
     }
   }, [user]);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const fetchAvailability = async () => {
     try {
       setLoading(true);

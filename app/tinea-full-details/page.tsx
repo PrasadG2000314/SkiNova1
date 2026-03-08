@@ -354,7 +354,7 @@ export default function TineaFullDetails() {
           <h2 className="text-3xl font-bold mb-6">What is Tinea?</h2>
           <div className="space-y-4 text-gray-200">
             <p>
-              Tinea is a fungal infection caused by dermatophytes (fungi that feed on dead skin, hair, and nails). These infections are also commonly called "ringworm," though they're not caused by worms.
+              Tinea is a fungal infection caused by dermatophytes (fungi that feed on dead skin, hair, and nails). These infections are also commonly called {"\"ringworm,\""} though {"they're"} not caused by worms.
             </p>
             <p>
               <span className="font-bold text-amber-400">Key Facts:</span>

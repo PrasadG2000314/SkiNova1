@@ -18,6 +18,7 @@ export default function RiskTrendsChart() {
     fetchTrends()
   }, [timeframe])
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const fetchTrends = async () => {
     try {
       setLoading(true)

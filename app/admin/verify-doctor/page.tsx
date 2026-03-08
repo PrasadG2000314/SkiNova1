@@ -1,7 +1,7 @@
 'use client';
 
 import { useSearchParams, useRouter } from 'next/navigation';
-import { useState, useEffect } from 'react';
+import { Suspense, useState, useEffect } from 'react';
 import Link from 'next/link';
 
 interface Doctor {
@@ -15,7 +15,7 @@ interface Doctor {
   createdAt: string;
 }
 
-export default function VerifyDoctorPage() {
+function VerifyDoctorPageContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const doctorId = searchParams.get('id');
@@ -35,6 +35,7 @@ export default function VerifyDoctorPage() {
     fetchDoctorDetails();
   }, [doctorId]);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const fetchDoctorDetails = async () => {
     try {
       const token = localStorage.getItem('token');
@@ -243,7 +244,7 @@ export default function VerifyDoctorPage() {
 
             <div className="bg-indigo-50 p-6 rounded-xl border border-indigo-200 mb-6">
               <p className="text-gray-700">
-                After reviewing the doctor's information and documents, you can approve their verification status.
+                After reviewing the {"doctor's"} information and documents, you can approve their verification status.
                 Once verified, the doctor will be able to access their dashboard and manage appointments.
               </p>
             </div>
@@ -285,5 +286,13 @@ export default function VerifyDoctorPage() {
         )}
       </div>
     </div>
+  );
+}
+
+export default function VerifyDoctorPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center">Loading...</div>}>
+      <VerifyDoctorPageContent />
+    </Suspense>
   );
 }

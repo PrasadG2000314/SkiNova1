@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 
 interface Report {
@@ -18,7 +18,7 @@ interface Patient {
   email: string;
 }
 
-export default function DoctorViewPatientReports() {
+function DoctorViewPatientReportsContent() {
   const [user, setUser] = useState<any>(null);
   const [patient, setPatient] = useState<Patient | null>(null);
   const [reports, setReports] = useState<Report[]>([]);
@@ -49,6 +49,7 @@ export default function DoctorViewPatientReports() {
     }
   }, [user, patientId]);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const fetchPatientReports = async () => {
     try {
       setLoading(true);
@@ -176,7 +177,7 @@ export default function DoctorViewPatientReports() {
             {/* Patient Reports Section */}
             <div className="rounded-3xl bg-white/20 backdrop-blur-xl border border-white/40 shadow-xl p-6 sm:p-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-                📋 Patient's Reports
+                📋 {"Patient's"} Reports
               </h2>
 
               {reports.length === 0 ? (
@@ -265,5 +266,13 @@ export default function DoctorViewPatientReports() {
         ) : null}
       </div>
     </div>
+  );
+}
+
+export default function DoctorViewPatientReports() {
+  return (
+    <Suspense fallback={<div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-sky-100 via-emerald-50 to-teal-100">Loading...</div>}>
+      <DoctorViewPatientReportsContent />
+    </Suspense>
   );
 }

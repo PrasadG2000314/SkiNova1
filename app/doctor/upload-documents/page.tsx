@@ -40,6 +40,7 @@ export default function UploadDocumentsPage() {
     }
   }, [user])
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const fetchDocuments = async () => {
     try {
       setLoading(true)

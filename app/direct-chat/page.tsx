@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 
@@ -9,7 +9,7 @@ import Link from "next/link";
  * This is a simplified messaging interface used when navigating from an appointment.
  * It shows only the conversation with a specific doctor/patient without a sidebar.
  */
-export default function DirectChatPage() {
+function DirectChatPageContent() {
   const [user, setUser] = useState<any>(null);
   const [messages, setMessages] = useState<any[]>([]);
   const [messageInput, setMessageInput] = useState("");
@@ -46,6 +46,7 @@ export default function DirectChatPage() {
     }
   }, [user, patientIdParam, doctorIdParam]);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const loadDirectChat = async (patientId: string, doctorId: string) => {
     try {
       setLoading(true);
@@ -411,5 +412,13 @@ export default function DirectChatPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function DirectChatPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Loading...</div>}>
+      <DirectChatPageContent />
+    </Suspense>
   );
 }

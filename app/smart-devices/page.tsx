@@ -57,6 +57,7 @@ export default function SmartDevicesPage() {
   const [batteryLevel, setBatteryLevel] = useState<number | null>(null);
   const [liveDataLog, setLiveDataLog] = useState<Array<{timestamp: string, heartRate: number}>>([]);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     fetchDevices();
   }, []);
@@ -655,7 +656,7 @@ export default function SmartDevicesPage() {
               <p className="text-green-100 mb-3">Follow these steps to connect your device and get Dosha analysis:</p>
               <ul className="text-green-50 space-y-1 text-sm">
                 <li>✅ <strong>Step 1:</strong> Turn on Bluetooth on your smartwatch and phone/computer</li>
-                <li>✅ <strong>Step 2:</strong> Click "🔍 Scan & Connect Device" button above</li>
+                <li>✅ <strong>Step 2:</strong> Click {"\"🔍 Scan & Connect Device\""} button above</li>
                 <li>✅ <strong>Step 3:</strong> Select your smartwatch from the browser dialog</li>
                 <li>✅ <strong>Step 4:</strong> Your heart rate will be monitored automatically</li>
                 <li>✅ <strong>Step 5:</strong> Get instant Dosha type analysis based on your heart rate!</li>
@@ -909,7 +910,7 @@ export default function SmartDevicesPage() {
             <div className="mt-6 p-4 bg-yellow-50 rounded-lg border border-yellow-200">
               <p className="text-sm text-yellow-800">
                 <strong>💡 Tip:</strong> Make sure your smartwatch is in pairing mode and Bluetooth is enabled. 
-                When the browser dialog appears, select your device and click "Pair".
+                When the browser dialog appears, select your device and click {"\"Pair\""}
               </p>
             </div>
           </div>

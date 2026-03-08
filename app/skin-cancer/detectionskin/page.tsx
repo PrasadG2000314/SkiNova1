@@ -303,7 +303,7 @@ export default function SkinCancerDetection() {
                     </div>
                   ) : riskResult ? (
                     <MultimodalRiskResults data={riskResult} />
-                  ) : showMetadataForm ? (
+                  ) : showMetadataForm && predictions ? (
                     <div className="space-y-6 animate-fadeIn" ref={metadataFormRef}>
                        <div className="bg-white rounded-2xl border-2 border-gray-200 p-6 shadow-lg opacity-80 hover:opacity-100 transition-opacity">
                           <div className="flex justify-between items-center mb-4">

@@ -26,6 +26,7 @@ export default function HealthDashboardPage() {
     fetchHealthData();
   }, [period]);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const fetchHealthData = async () => {
     try {
       const token = localStorage.getItem('token');
@@ -238,7 +239,7 @@ export default function HealthDashboardPage() {
                 {summary.last24Hours.sleep.totalMinutes < 360 && (
                   <div className="bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded">
                     <p className="text-indigo-900 font-semibold">😴 Insufficient Sleep</p>
-                    <p className="text-indigo-800 text-sm mt-1">You're getting less than 6 hours of sleep. Better sleep promotes skin recovery.</p>
+                    <p className="text-indigo-800 text-sm mt-1">{"You're"} getting less than 6 hours of sleep. Better sleep promotes skin recovery.</p>
                   </div>
                 )}
                 

@@ -52,7 +52,7 @@ export default function ContactUsPage() {
             Get In Touch
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Have questions about our services? We'd love to hear from you. Reach out and one of our team members will respond shortly.
+            Have questions about our services? {"We'd"} love to hear from you. Reach out and one of our team members will respond shortly.
           </p>
         </div>
 

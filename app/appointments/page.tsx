@@ -342,7 +342,7 @@ export default function AppointmentsPage() {
                           </button>
                         </div>
                       ) : (
-                        <p className="text-xs text-gray-700 font-semibold">⏳ Waiting for doctor's response</p>
+                        <p className="text-xs text-gray-700 font-semibold">⏳ Waiting for {"doctor's"} response</p>
                       )
                     )}
                     {appointment.status === "rejected" && (

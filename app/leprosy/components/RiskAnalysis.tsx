@@ -70,6 +70,7 @@ export default function RiskAnalysisComponent() {
     fetchLatestAssessment()
   }, [])
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const fetchLatestAssessment = async () => {
     try {
       setLoading(true)
