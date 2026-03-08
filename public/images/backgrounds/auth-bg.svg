@@ -1,0 +1,95 @@
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Premium gradient for medical app -->
+    <linearGradient id="premiumGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1" />
+      <stop offset="25%" style="stop-color:#f0f9ff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ede9fe;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#fef3c7;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#f3e8ff;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Radial gradients for glowing orbs -->
+    <radialGradient id="glow1" cx="30%" cy="20%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0" />
+    </radialGradient>
+    
+    <radialGradient id="glow2" cx="70%" cy="80%">
+      <stop offset="0%" style="stop-color:#ec4899;stop-opacity:0.12" />
+      <stop offset="100%" style="stop-color:#ec4899;stop-opacity:0" />
+    </radialGradient>
+    
+    <radialGradient id="glow3" cx="85%" cy="25%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0" />
+    </radialGradient>
+    
+    <radialGradient id="glow4" cx="15%" cy="70%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:0.08" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:0" />
+    </radialGradient>
+    
+    <!-- Hexagon pattern for medical/scientific feel -->
+    <pattern id="hexPattern" x="0" y="0" width="120" height="104" patternUnits="userSpaceOnUse">
+      <path d="M 60,10 L 90,35 L 90,75 L 60,95 L 30,75 L 30,35 Z" fill="none" stroke="#e0e7ff" stroke-width="1" opacity="0.15"/>
+    </pattern>
+    
+    <!-- Animated wave pattern (subtle) -->
+    <filter id="blur">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1" />
+    </filter>
+  </defs>
+  
+  <!-- Base premium gradient -->
+  <rect width="1920" height="1080" fill="url(#premiumGradient)"/>
+  
+  <!-- Hexagon pattern background -->
+  <rect width="1920" height="1080" fill="url(#hexPattern)"/>
+  
+  <!-- Large glowing orbs (medical/health theme) -->
+  <circle cx="300" cy="200" r="500" fill="url(#glow1)" filter="url(#blur)"/>
+  <circle cx="1620" cy="880" r="550" fill="url(#glow2)" filter="url(#blur)"/>
+  <circle cx="1700" cy="150" r="400" fill="url(#glow3)" filter="url(#blur)"/>
+  <circle cx="220" cy="800" r="450" fill="url(#glow4)" filter="url(#blur)"/>
+  
+  <!-- Subtle decorative elements - DNA helix inspired spirals -->
+  <g opacity="0.08" stroke="#4f46e5" stroke-width="2" fill="none">
+    <!-- Left spiral -->
+    <path d="M 150 200 Q 200 250 150 300 Q 100 350 150 400"/>
+    <path d="M 150 300 Q 200 350 150 400 Q 100 450 150 500"/>
+  </g>
+  
+  <g opacity="0.08" stroke="#8b5cf6" stroke-width="2" fill="none">
+    <!-- Right spiral -->
+    <path d="M 1770 150 Q 1820 200 1770 250 Q 1720 300 1770 350"/>
+    <path d="M 1770 250 Q 1820 300 1770 350 Q 1720 400 1770 450"/>
+  </g>
+  
+  <!-- Floating medical elements - subtle icons -->
+  <g opacity="0.06">
+    <!-- Stethoscope shape (abstracted) -->
+    <path d="M 400 900 Q 420 880 440 900 Q 460 920 480 900" stroke="#06b6d4" stroke-width="3" fill="none" stroke-linecap="round"/>
+    
+    <!-- Molecule structure (circle nodes) -->
+    <circle cx="1500" cy="950" r="8" fill="#ec4899"/>
+    <circle cx="1520" cy="970" r="8" fill="#ec4899"/>
+    <circle cx="1540" cy="950" r="8" fill="#ec4899"/>
+    <line x1="1500" y1="950" x2="1520" y2="970" stroke="#ec4899" stroke-width="2"/>
+    <line x1="1520" y1="970" x2="1540" y2="950" stroke="#ec4899" stroke-width="2"/>
+    <line x1="1500" y1="950" x2="1540" y2="950" stroke="#ec4899" stroke-width="2"/>
+  </g>
+  
+  <!-- Soft light rays effect -->
+  <defs>
+    <radialGradient id="lightRay" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <rect width="1920" height="1080" fill="url(#lightRay)"/>
+  
+  <!-- Top accent bar (subtle) -->
+  <rect x="0" y="0" width="1920" height="3" fill="#06b6d4" opacity="0.05"/>
+</svg>
