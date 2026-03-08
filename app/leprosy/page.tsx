@@ -23,7 +23,7 @@ export default function LeprosyPage() {
               <span className="inline-block bg-white/20 text-white px-4 py-1 rounded-full text-sm font-semibold mb-4">
                 Infectious bacterial disease
               </span>
-              <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">Leprosy (Hansen's Disease)</h1>
+              <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">Leprosy (Hansen&apos;s Disease)</h1>
               <p className="text-lg text-white/90 max-w-2xl leading-relaxed">
                 A chronic infectious disease caused by Mycobacterium leprae. Early detection and treatment can prevent disability and complications. Explore our comprehensive tools for detection and management.
               </p>
@@ -75,7 +75,7 @@ export default function LeprosyPage() {
         <div className="space-y-8">
           {/* What is Leprosy */}
           <section className="bg-white rounded-3xl p-6 sm:p-8 shadow-lg">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">What is Leprosy (Hansen's Disease)?</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">What is Leprosy (Hansen&apos;s Disease)?</h2>
             <p className="text-gray-700 leading-relaxed text-lg">
               Leprosy is a chronic infectious disease caused by the bacterium Mycobacterium leprae. It primarily affects the skin and peripheral nerves. With early detection and proper treatment, it is curable and disability can be prevented. The disease has been largely eliminated in most countries through antibiotic therapy.
             </p>

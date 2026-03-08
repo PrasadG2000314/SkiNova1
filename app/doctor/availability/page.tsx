@@ -61,6 +61,7 @@ export default function DoctorAvailability() {
     if (user?.role === "doctor") {
       fetchAvailability();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user]);
 
   const fetchAvailability = async () => {

@@ -33,6 +33,7 @@ export default function VerifyDoctorPage() {
     }
 
     fetchDoctorDetails();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [doctorId]);
 
   const fetchDoctorDetails = async () => {
@@ -243,7 +244,7 @@ export default function VerifyDoctorPage() {
 
             <div className="bg-indigo-50 p-6 rounded-xl border border-indigo-200 mb-6">
               <p className="text-gray-700">
-                After reviewing the doctor's information and documents, you can approve their verification status.
+                After reviewing the doctor&apos;s information and documents, you can approve their verification status.
                 Once verified, the doctor will be able to access their dashboard and manage appointments.
               </p>
             </div>

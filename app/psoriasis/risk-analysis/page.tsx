@@ -219,6 +219,7 @@ export default function PsoriasisRiskAnalysis() {
         }
       );
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Auto-refresh every 10 minutes
@@ -234,6 +235,7 @@ export default function PsoriasisRiskAnalysis() {
     }, 600000); // 10 minutes
 
     return () => clearInterval(interval);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -483,7 +485,7 @@ export default function PsoriasisRiskAnalysis() {
                 {/* Grad-CAM Explanation */}
                 <div className="p-4 bg-cyan-500/10 rounded-2xl border border-cyan-500/30 mb-6">
                   <p className="text-sm text-cyan-100">
-                    📊 <span className="font-semibold">How to read this:</span> The neural network has learned which weather factors are most important for psoriasis risk prediction. Color intensity and percentage show the model's activation gradient for each factor. This is computed via backpropagation through the CNN.
+                    📊 <span className="font-semibold">How to read this:</span> The neural network has learned which weather factors are most important for psoriasis risk prediction. Color intensity and percentage show the model&apos;s activation gradient for each factor. This is computed via backpropagation through the CNN.
                   </p>
                 </div>
 

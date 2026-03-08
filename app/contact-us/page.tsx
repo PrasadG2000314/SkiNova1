@@ -93,7 +93,7 @@ export default function ContactUsPage() {
             Get In Touch
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Have questions about our services? We'd love to hear from you. Reach out and one of our team members 
+            Have questions about our services? We&apos;d love to hear from you. Reach out and one of our team members 
             will respond shortly.
           </p>
         </div>
@@ -104,7 +104,7 @@ export default function ContactUsPage() {
             <CheckCircle className="text-green-600 flex-shrink-0 mt-0.5" size={24} />
             <div>
               <h3 className="font-bold text-green-900 text-lg">Message Sent Successfully!</h3>
-              <p className="text-green-800 text-sm">Thank you for contacting us. We'll get back to you shortly.</p>
+              <p className="text-green-800 text-sm">Thank you for contacting us. We&apos;ll get back to you shortly.</p>
             </div>
           </div>
         )}
@@ -133,7 +133,7 @@ export default function ContactUsPage() {
               <div>
                 <h3 className="font-bold text-gray-900 text-lg">Email</h3>
                 <p className="text-gray-600 text-lg">hello@skinnova.com</p>
-                <p className="text-gray-500 text-sm mt-1">We'll respond within 24 hours</p>
+                <p className="text-gray-500 text-sm mt-1">We&apos;ll respond within 24 hours</p>
               </div>
             </div>
 

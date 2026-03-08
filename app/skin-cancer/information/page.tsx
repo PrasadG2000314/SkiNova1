@@ -262,7 +262,7 @@ export default function SkinCancerInformation() {
                   <div className="bg-red-50 rounded-2xl p-6 border-2 border-red-200 hover:border-red-400 transition-all">
                     <p className="text-3xl font-black text-red-500 mb-2">A</p>
                     <p className="font-bold text-red-700 mb-2">Asymmetry</p>
-                    <p className="text-sm text-gray-700">One half doesn't match the other half</p>
+                    <p className="text-sm text-gray-700">One half doesn&apos;t match the other half</p>
                   </div>
                   <div className="bg-orange-50 rounded-2xl p-6 border-2 border-orange-200 hover:border-orange-400 transition-all">
                     <p className="text-3xl font-black text-orange-500 mb-2">B</p>

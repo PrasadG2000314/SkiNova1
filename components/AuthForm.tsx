@@ -257,7 +257,7 @@ export default function AuthForm({ mode, compact = false }: Props) {
 
           <div className="mt-8 text-center text-sm text-gray-600">
             {mode === 'login' ? (
-              <p>Don't have an account? <a href="/signup" className="font-semibold text-indigo-600 hover:text-indigo-700 transition-colors">Sign up</a></p>
+              <p>Don&apos;t have an account? <a href="/signup" className="font-semibold text-indigo-600 hover:text-indigo-700 transition-colors">Sign up</a></p>
             ) : (
               <p>Already have an account? <a href="/login" className="font-semibold text-indigo-600 hover:text-indigo-700 transition-colors">Sign in</a></p>
             )}

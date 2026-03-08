@@ -38,6 +38,7 @@ export default function UploadDocumentsPage() {
     if (user) {
       fetchDocuments()
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user])
 
   const fetchDocuments = async () => {

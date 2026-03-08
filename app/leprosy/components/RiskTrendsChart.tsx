@@ -16,6 +16,7 @@ export default function RiskTrendsChart() {
 
   useEffect(() => {
     fetchTrends()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [timeframe])
 
   const fetchTrends = async () => {

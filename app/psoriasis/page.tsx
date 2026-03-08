@@ -38,7 +38,7 @@ export default function PsoriasisPage() {
           <section className="bg-white rounded-3xl p-6 sm:p-8 shadow-lg">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">What is Psoriasis?</h2>
             <p className="text-gray-700 leading-relaxed text-lg">
-              Psoriasis is a chronic autoimmune skin condition where the body's immune system attacks healthy skin cells, causing them to multiply rapidly. This results in thick, scaly patches that are often red, inflamed, and itchy. It typically appears on the elbows, knees, scalp, and lower back, but can occur anywhere on the body.
+              Psoriasis is a chronic autoimmune skin condition where the body&apos;s immune system attacks healthy skin cells, causing them to multiply rapidly. This results in thick, scaly patches that are often red, inflamed, and itchy. It typically appears on the elbows, knees, scalp, and lower back, but can occur anywhere on the body.
             </p>
           </section>
 

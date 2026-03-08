@@ -109,6 +109,7 @@ export default function BluetoothConnectionPage() {
       socketRef.current?.disconnect();
       hrCharRef.current?.stopNotifications().catch(() => {});
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // ─── Environment & Browser Checks ───────────────────────────────────────

@@ -68,6 +68,7 @@ export default function SkinCancerChatbot({ predictions }: SkinCancerChatbotProp
         },
         ]);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [predictions, isUnsure, isMelanoma, isNotMelanoma]);
 
   const scrollToBottom = () => {
