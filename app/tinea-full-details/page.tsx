@@ -354,13 +354,13 @@ export default function TineaFullDetails() {
           <h2 className="text-3xl font-bold mb-6">What is Tinea?</h2>
           <div className="space-y-4 text-gray-200">
             <p>
-              Tinea is a fungal infection caused by dermatophytes (fungi that feed on dead skin, hair, and nails). These infections are also commonly called "ringworm," though they're not caused by worms.
+              Tinea is a fungal infection caused by dermatophytes (fungi that feed on dead skin, hair, and nails). These infections are also commonly called &quot;ringworm,&quot; though they&apos;re not caused by worms.
             </p>
             <p>
               <span className="font-bold text-amber-400">Key Facts:</span>
             </p>
             <ul className="list-disc list-inside space-y-2 ml-4">
-              <li>Affects up to 20-25% of the world's population at any given time</li>
+              <li>Affects up to 20-25% of the world&apos;s population at any given time</li>
               <li>Can spread through direct contact with infected skin or contaminated objects</li>
               <li>Thrives in warm, moist, dark environments</li>
               <li>More common in warm climates and during summer months</li>

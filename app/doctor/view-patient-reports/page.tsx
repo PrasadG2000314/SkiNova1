@@ -47,6 +47,7 @@ export default function DoctorViewPatientReports() {
     if (user?.role === "doctor" && patientId) {
       fetchPatientReports();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user, patientId]);
 
   const fetchPatientReports = async () => {
@@ -113,7 +114,7 @@ export default function DoctorViewPatientReports() {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
           <div>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">
-              Dr {user.name}'s <span className="text-emerald-700">Patient Reports</span>
+              Dr {user.name}&apos;s <span className="text-emerald-700">Patient Reports</span>
             </h1>
             <p className="mt-3 text-sm sm:text-base text-gray-700 max-w-xl">
               View and download medical reports shared by your patient.
@@ -176,7 +177,7 @@ export default function DoctorViewPatientReports() {
             {/* Patient Reports Section */}
             <div className="rounded-3xl bg-white/20 backdrop-blur-xl border border-white/40 shadow-xl p-6 sm:p-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-                📋 Patient's Reports
+                📋 Patient&apos;s Reports
               </h2>
 
               {reports.length === 0 ? (

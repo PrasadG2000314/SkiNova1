@@ -282,7 +282,7 @@ export default function SkinCancerPredict() {
                 {riskScore < 25 && (
                   <>
                     <p>Your skin cancer risk appears to be <strong>low</strong> based on the provided information.</p>
-                    <p>However, it's still important to:</p>
+                    <p>However, it&apos;s still important to:</p>
                     <ul className="list-disc pl-6 space-y-2 text-sm">
                       <li>Practice regular sun protection and use SPF 30+ sunscreen daily</li>
                       <li>Perform monthly self-skin checks using the ABCDE method</li>
@@ -347,7 +347,7 @@ export default function SkinCancerPredict() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="border-l-4 border-red-600 pl-4 py-2">
                   <p className="font-bold text-red-600">A - Asymmetry</p>
-                  <p className="text-sm text-gray-700">One half doesn't match the other</p>
+                  <p className="text-sm text-gray-700">One half doesn&apos;t match the other</p>
                 </div>
                 <div className="border-l-4 border-red-600 pl-4 py-2">
                   <p className="font-bold text-red-600">B - Border</p>

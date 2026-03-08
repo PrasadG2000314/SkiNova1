@@ -44,6 +44,7 @@ export default function DirectChatPage() {
       }, 5000);
       return () => clearInterval(interval);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user, patientIdParam, doctorIdParam]);
 
   const loadDirectChat = async (patientId: string, doctorId: string) => {

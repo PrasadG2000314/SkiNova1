@@ -47,6 +47,7 @@ export default function PatientReports() {
       fetchReports();
       fetchAppointments();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user]);
 
   const fetchAppointments = async () => {
@@ -544,7 +545,7 @@ export default function PatientReports() {
           </div>
           <div className="bg-emerald-50 rounded-2xl p-6 border border-emerald-200">
             <p className="text-gray-700 text-sm">
-              Click the <strong>"+ New Report"</strong> button above to upload a new medical report, test result, or any other relevant documentation.
+              Click the <strong>&quot;+ New Report&quot;</strong> button above to upload a new medical report, test result, or any other relevant documentation.
             </p>
           </div>
         </div>

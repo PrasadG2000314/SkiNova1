@@ -493,7 +493,7 @@ export default function SkinCancer() {
             <div className="relative z-10">
               <h2 className="text-3xl sm:text-4xl font-bold mb-4">Take Action Today 🛡️</h2>
               <p className="text-lg mb-8 text-blue-50 max-w-2xl mx-auto">
-                Your skin is your body's largest organ. Regular monitoring and early detection can save your life. Start with a self-examination today and schedule a dermatologist appointment.
+                Your skin is your body&apos;s largest organ. Regular monitoring and early detection can save your life. Start with a self-examination today and schedule a dermatologist appointment.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button

@@ -24,6 +24,7 @@ export default function HealthDashboardPage() {
 
   useEffect(() => {
     fetchHealthData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [period]);
 
   const fetchHealthData = async () => {
@@ -238,14 +239,14 @@ export default function HealthDashboardPage() {
                 {summary.last24Hours.sleep.totalMinutes < 360 && (
                   <div className="bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded">
                     <p className="text-indigo-900 font-semibold">😴 Insufficient Sleep</p>
-                    <p className="text-indigo-800 text-sm mt-1">You're getting less than 6 hours of sleep. Better sleep promotes skin recovery.</p>
+                    <p className="text-indigo-800 text-sm mt-1">You&apos;re getting less than 6 hours of sleep. Better sleep promotes skin recovery.</p>
                   </div>
                 )}
                 
                 {summary.last24Hours.steps.total > 10000 && (
                   <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
                     <p className="text-green-900 font-semibold">👟 Great Activity!</p>
-                    <p className="text-green-800 text-sm mt-1">You've exceeded 10,000 steps! Regular activity supports healthy circulation.</p>
+                    <p className="text-green-800 text-sm mt-1">You&apos;ve exceeded 10,000 steps! Regular activity supports healthy circulation.</p>
                   </div>
                 )}
               </div>

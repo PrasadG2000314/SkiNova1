@@ -554,7 +554,7 @@ export default function TinePage() {
                     </li>
                     <li className="flex gap-3 p-3 rounded-lg bg-orange-50 border border-orange-200">
                       <span className="text-orange-600 font-bold">•</span>
-                      <span><strong>Wood's Lamp</strong> - Detects fluorescence patterns</span>
+                      <span><strong>Wood&apos;s Lamp</strong> - Detects fluorescence patterns</span>
                     </li>
                   </ul>
                 </div>

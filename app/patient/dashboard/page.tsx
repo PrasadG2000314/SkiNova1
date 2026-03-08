@@ -1275,7 +1275,7 @@ export default function PatientDashboard() {
                             )}
                             {apt.notes && (
                               <p className="text-xs text-red-700 mt-2">
-                                <strong>Doctor's Message:</strong> {apt.notes}
+                                <strong>Doctor&apos;s Message:</strong> {apt.notes}
                               </p>
                             )}
                           </div>

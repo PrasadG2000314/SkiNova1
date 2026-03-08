@@ -1786,7 +1786,7 @@ export default function AdminDashboard() {
 
             {/* Quick Stats */}
             <div className="bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl shadow-lg p-6 text-white">
-              <h3 className="text-lg font-bold mb-4">Today's Summary</h3>
+              <h3 className="text-lg font-bold mb-4">Today&apos;s Summary</h3>
               <div className="space-y-3">
                 <div className="flex justify-between items-center pb-3 border-b border-white/20">
                   <span className="text-sm opacity-90">New Signups</span>
